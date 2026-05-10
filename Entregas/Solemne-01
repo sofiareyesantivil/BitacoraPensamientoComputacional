@@ -1,0 +1,237 @@
+function setup() {
+  createCanvas(450, 600);
+  angleMode(DEGREES)
+}
+
+function draw() {
+  background(191, 23, 23); //rojo
+  
+  
+  
+  
+  // creé una figura con forma de estrella con 10 picos
+push()
+  translate(width / 3, height / 10)
+  fill(237, 208, 130);  //amarillo apagado
+  noStroke();
+  //funcion nueva de estrella con varios picos
+  drawStar(60, 140, 110, 170, 12); 
+  
+  
+}
+
+
+
+function drawStar(x, y, radio1, radio2, nPicos) {
+  let angulo = 360 / nPicos; // este hace la diferencia de grados entre los picos
+  let medioAngulo = angulo / 2; // con este movemos la parte interna de los puntoss 
+  
+  beginShape();
+  
+    for (let a = 0; a < 360; a += angulo) {
+    
+    //puntos exteriores (punta de cada pico)
+    let sx = 60 + cos(a) * 170;
+    let sy = 140 + sin(a) * 170;
+    vertex(sx, sy);
+    
+    //puntos interiores (espacio entre los picos)
+    let nx = 60 + cos(a + medioAngulo) * 110;
+    let ny = 140 + sin(a + medioAngulo) * 110;
+    vertex(nx, ny);
+      
+      
+      
+  }
+  endShape(CLOSE);
+pop()
+  
+  //push y pop para que la funcion solo afecte a una cosa y no a mi lienzo completo
+  
+
+                                //fin de la figura de estrella
+  
+  
+  
+  
+  
+                                        // MANIFIESTO 
+  
+  //https://designmanifestos.org/walter-gropius-manifesto-of-the-staatliches-bauhaus/
+  
+  //The ultimate goal of all art is the building!
+  //“artist”
+  //Architects
+  
+push()
+  stroke(0)
+  strokeWeight(0.7)
+fill(245, 240, 240);        //BLANCO
+  textFont("Impact")
+  textStyle(BOLD)
+  textSize(55);    
+  textAlign(LEFT);         // Alineado a la izquierda
+  text("THE ULTIMATE GOAL", 10, 60);
+  text("OF ALL ART IS", 10, 120);
+  text("THE BULIDING!",10, 180);
+pop()
+  
+  stroke(0)
+  strokeWeight(0.5)
+fill(245, 240, 240);        //BLANCO
+  textFont("Helvetica")
+  textStyle(BOLDITALIC)
+  textSize(20);    
+  textAlign(LEFT);         // Alineado a la izquierda
+  text("THE ULTIMATE GOAL", 10, 200);
+  text("OF ALL ART IS", 10, 220);
+  text("THE BULIDING!",10, 240);
+  
+  
+  
+  
+  
+  
+                                      //fin del manifiesto
+  
+  
+                                      //inicio edificios
+  
+  //edificio 1 lado derecho
+  
+  
+  
+    noStroke()
+  fill(94, 91, 91)   //gris oscuro
+  quad(430, 720, 500, 330, 340, 40, 240, 140)
+  fill(196, 187, 187)   //gris claro
+  quad(450, 240, 450, 135, 410, 80, 340, 40)
+  
+push()
+  stroke(0)
+  strokeWeight(2)
+  line(255, 128, 430, 600);
+  line(270, 111, 460, 600);
+  line(288, 93, 495, 600);
+  line(305, 76, 450, 410);
+  line(320, 60, 450, 340);
+pop()
+  
+  
+   //sobresaliente del edicio 1
+  
+   fill(66, 66, 66)  //gris mas oscuro
+  quad(300, 400, 470, 270, 430, 180, 270, 310);
+  
+  fill(156, 151, 151)   //gris claro
+  quad(325, 405, 470, 300, 450, 285, 300, 400);
+  
+  
+  fill(222, 220, 220)  //blanco 
+  triangle(430, 180, 450, 190, 450, 230)
+  
+  
+  
+  //texto sobre edificio 1 "ARTISTA"
+push()
+  rotate(-38)
+   stroke(0)
+    strokeWeight(0.7)
+    fill(245, 240, 240);        //BLANCO
+      textFont("Impact")
+      textStyle(BOLD)
+      textSize(55);    
+      textAlign(LEFT);         // Alineado a la izquierda
+  shearX(-15); // Inclina el texto hacia la izquierda
+      text("ARTIST",150, 480);
+pop()
+  
+
+  
+  
+  //edificio 2 lado izquierdo
+  
+
+  fill(94, 91, 91)   //gris oscuro
+  quad(100, 600, 190, 260, 100, 260, 0, 600)
+  fill(196, 187, 187)   //gris claro
+  quad(100, 600, 160, 600, 210, 350, 190, 260);
+  
+  
+  fill(156, 151, 151)   //gris claro
+   quad(0, 600, 79.5, 330, 30, 330, -80, 620)
+  
+  
+//texto sobre edificio 2 "arquitectura"
+push()
+  rotate(-74)
+   stroke(0)
+    strokeWeight(0.7)
+    fill(245, 240, 240);        //BLANCO
+      textFont("Impact")
+      textStyle(BOLD)
+      textSize(55);    
+      textAlign(LEFT);         // Alineado a la izquierda
+  shearX(15); // Inclina el texto hacia la derecha
+      text("ARCHITECTURE",-600, 230);
+pop()
+  
+  
+  
+  //edificio 3 centro
+  
+  fill(79, 77, 77)  //gris mas oscuro
+  quad(60, 600, 220, 600, 250, 400, 110, 400);
+  fill(196, 187, 187)   //gris claro
+  quad(220, 600, 280, 600, 290, 500, 250, 400);
+  
+  
+  push()
+   stroke(0)
+  strokeWeight(2)
+  line(130, 401, 80, 600);
+  line(150, 401, 100, 600);
+  line(170, 401, 120, 600);
+  line(190, 401, 140, 600);
+  line(210, 401, 160, 600);
+  line(230, 401, 180, 600);
+pop()
+ 
+  
+  
+                        
+                                //fin edificios
+  
+  
+  //circulos
+  
+  
+push()
+   noFill()
+  stroke(245, 240, 240)
+  strokeWeight(5)
+  circle(250, 560, 180)
+pop()
+  
+  fill(135, 14, 14)   //rojo oscuro
+  circle(200, 600, 200)
+   circle(380, 460, 130)
+  
+  push()
+   noFill()
+  stroke(245, 240, 240)
+  strokeWeight(5)
+  circle(380, 460, 100)
+   circle(380, 460, 50)
+pop()
+  
+  
+}
+
+//para guardar la imagen en .png
+
+function mousePressed(){
+  saveCanvas('solemne01-Reyes-Sofía' , 'gif')
+  
+  
+}
