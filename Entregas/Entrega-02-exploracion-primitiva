@@ -1,0 +1,131 @@
+function setup() {
+  createCanvas(400, 500);
+}
+
+function draw() {
+  background(240, 255);
+
+  
+  ///rectangulos///
+  
+  fill(0)
+  stroke(0);
+rect(296, 60, 13, 500)
+  
+  
+  ///circulos///
+  
+  noStroke(0)
+  
+  fill(220, 40, 50);        //rojo
+circle(290, 330,200)
+  fill(150, 255);           //gris
+circle(50, 50, 360)
+  fill(240, 255);           //blanco
+circle(50, 50, 310)
+  fill(250, 204, 0);        //amarillo
+circle(250, 180 , 70)
+  fill(0);                  //negro + amarillo
+circle(250, 180, 20)
+  fill(0);                  //negro 1
+circle(45, 350, 30)
+  fill(0);                  //negro 2
+circle(365, 30, 10)
+  
+  ///lineas verticales///
+
+  stroke(0)
+  strokeWeight(2);
+  
+line(0, 30, 310, 30); //1 
+line(0, 50, 250, 50); //2
+  
+  ///lineas horizontales///
+  
+  stroke(0); //color del borde
+  strokeWeight(2); //grosor
+  
+line(30, 0, 30, 310); //1
+line(50, 0, 50, 250); //2
+
+  ///triangulos///
+
+  noStroke(0)
+  fill(240, 255);                         //blanco 1
+triangle(230, 310, 400, 450, 400, 330)
+  fill(0);                                //negro 1
+triangle(230, 310, 400, 430, 400, 330)
+  fill(240, 255);                         //blanco 2
+triangle(400, 250, 280, 300, 450, 315)
+  fill(0);                                //negro 2
+triangle(400, 250, 280, 300, 420, 300)
+  fill(240, 255);                         //blanco 3
+triangle(330, 200, 270, 280, 360, 240)
+  fill(0);                                //negro 3
+triangle(330, 200, 270, 280, 360, 230)
+  
+  ///transparencia rectangulo///
+  
+  noStroke(0);                            //color del borde
+  fill(255, 255, 0, 100);                 //amarillo transparente
+rect(0, 250, 220, 10)
+rect(208, 250, 12, 251)
+rect(100, 350, 170, 15)
+rect(255, 350, 15, 170)
+rect(100, 350, 15, 170)
+  
+  ///lineas angulares abajo///
+  
+  stroke(0)
+  strokeWeight(2);
+  
+line(228, 312, 0, 460); //1
+line(228, 312, 0, 470); //2
+line(228, 312, 0, 480); //3
+line(228, 312, 0, 490); //4
+line(228, 312, 0, 500); //5
+line(228, 312, 0, 490); //6
+line(228, 312, 15, 500); //7
+line(228, 312, 30, 500); //8
+  
+
+  ///lineas angulares arriba///
+  
+   stroke(0)
+  strokeWeight(2);
+  
+line(0, 80, 228, 308); //1
+line(0, 90, 228, 308); //2
+line(0, 100, 228, 308); //3
+line(0, 110, 228, 308); //4
+line(0, 120, 228, 308); //5
+line(0, 130, 228, 308); //6
+line(0, 140, 228, 308); //7
+line(0, 150, 228, 308); //8
+  
+  ///rectangulos arriba///
+  
+  noFill()
+  stroke(310, 260, 255);
+  strokeWeight(10);
+rect(330, -20, 200, 90)
+  
+   noFill()
+  stroke(310, 260, 255);
+  strokeWeight(10);
+rect(350, -20, 200, 200)
+  
+  noFill()
+  stroke(310, 260, 255);
+  strokeWeight(10);
+rect(380, 100, 100, 120)
+  
+  ///puntos blancos///
+  
+  noStroke()
+  fill(310, 260, 255);                  //brillo
+circle(255, 295, 7)
+circle(250, 270, 7)
+circle(235, 285, 7)
+  
+}
