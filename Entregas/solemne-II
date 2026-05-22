@@ -1,0 +1,322 @@
+//*aun no sabemos usar las carpetas en p5 para agregar las imagenes*
+
+
+//Fotos javierita //
+
+    // distintos rostros 
+  
+  let img1;
+  let img2;
+  let img3;
+  let img4;
+  let img5;
+  let img6;
+  let img7;
+  let img8;
+  let img9;
+  let img10;
+  let img11;
+  
+// musica //
+  
+ // variables para la acctivacion de la musica
+  let musica;
+ let empezar = false
+ let tiempoInicial = 0;
+
+
+// camara //
+
+let cam1;
+let cam2;
+
+  
+function preload(){
+  
+  
+  // fotos javi //
+  
+  img1 = loadImage('01.png');
+  img2 = loadImage('02.png');
+  img3 = loadImage('03.png');
+  img4 = loadImage('04.png');
+  img5 = loadImage('05.png');
+  img6 = loadImage('06.png');
+  img7 = loadImage('07.png');
+  img8 = loadImage('08.png');
+  img9 = loadImage('09.png');
+  img10 = loadImage('10.png');
+  img11 = loadImage('11.png');
+  
+  // musica //
+  
+ musica = loadSound('audiojavi.mp3');
+  
+  // camara //
+  cam1 = loadImage('cam1.png');
+  cam2 = loadImage('cam2.png');}
+
+
+function setup() {
+  createCanvas(500, 500);
+
+}
+
+function draw() {
+  background(0);
+  
+  
+  
+  
+  if (empezar === false){
+    textAlign(CENTER, CENTER);
+    textSize(20);
+    fill(50);
+    text('para iniciar la musica clickea la pantalla :p', width /2, height /2);
+  }
+  
+
+  
+      // tam = tamaño de imagen,  sin + frameCount repesenta la pulsacion por segundo
+  
+  let tam1 = 180 + sin(frameCount * 0.10) * 20;
+  let tam2 = 400 + sin(frameCount * 0.10) * 20;
+ 
+
+  
+      // millis significa milesima por segundo, la ocupamos para saber cuantos segundo han transcurrido desde que se inició la ejecución del sketch
+  
+ let tiempo = (millis() - tiempoInicial) /1000;
+  
+  
+  // el && se ocupa para hacer funcionar dos condiciones al mismo tiempo
+  // si esta correcto el codigo, '&&', dara true y dejara que la funcion se ejecute
+
+  // color morado//
+  
+  if (tiempo >= 0 && tiempo < 20) 
+  fill(84, 21, 42)
+  noStroke()
+  rect(0,0, 500,500)
+  
+  
+  
+  // color rosado //
+   if (tiempo >= 5.5 && tiempo < 20) 
+  fill(227, 163, 164)
+  noStroke()
+  rect(0,0, 500,500)
+  
+  
+  // color amarillo//
+  
+    if (tiempo >= 10 && tiempo < 20) 
+  fill(236, 227, 152)
+  noStroke()
+  rect(0,0, 500,500)
+  
+  
+  // color rojo//
+  
+    if (tiempo >= 12 && tiempo < 20) 
+  fill(84, 21, 42)
+  noStroke()
+  rect(0,0, 500,500)
+  
+  
+
+  // caritas pequeñas //
+  push()
+  if (tiempo >= 0 && tiempo < 5.5) {
+    image(img1, width /2, height /2, tam1, tam1);}
+    pop()
+  
+  push()
+  if (tiempo >= 0.4 && tiempo < 5.5) {
+    image(img2, width /4, height / 6, tam1, tam1);}
+    pop()
+  
+  push()
+     if (tiempo >= 0.8 && tiempo < 5.5) {
+   image(img3, width /10, height/2, tam1, tam1);}
+    pop()
+  
+    push()
+  if (tiempo >= 1.2 && tiempo < 5.5) {
+    image(img4, 300, 10, tam1, tam1);}
+    pop()
+  
+  push()
+     if (tiempo >= 2 && tiempo < 5.5) {
+    image(img5,width /18, height/18, tam1, tam1);}
+    pop()
+  
+  push()
+    if (tiempo >= 3.2 && tiempo < 5.5) {
+ image(img6, width /30, height/3, tam1, tam1);}
+   pop()
+  
+  push()
+     if (tiempo >= 3.4 && tiempo < 5.5) {
+    image(img7, width /3, height/1.5, tam1, tam1);}
+    pop()
+  
+  push()
+     if (tiempo >= 3.8 && tiempo < 5.5) {
+    image(img8, width /1.5, height/3, tam1, tam1);}
+    pop()
+  
+  push()
+     if (tiempo >= 4.2 && tiempo < 5.5) {
+    image(img9, 150, 200, tam1, tam1);}
+    pop()
+  
+  push()
+     if (tiempo >= 5 && tiempo < 5.5) {
+    image(img10, 150, 6, tam1, tam1);}
+    pop()
+  
+  push()
+     if (tiempo >=  5.3 && tiempo < 5.5) {
+    image(img11, 280, 150, tam1, tam1);}
+   pop()
+  
+// time lapse 1 caras grandes
+  
+  
+  
+ if (tiempo >= 5.5 && tiempo < 10) {
+    image(img1, width /2, height /2, tam2, tam2);}
+  
+if (tiempo >= 6.1 && tiempo < 10) {
+    image(img2, width /4, height / 6, tam2, tam2);}
+  
+    if (tiempo >= 6.5 && tiempo < 10) {
+   image(img3, width /10, height/2, tam2, tam2);}
+  
+  if (tiempo >= 6.9 && tiempo < 10){
+    image(img4, 300, 10, tam2, tam2);}
+  
+     if (tiempo >= 7.8 && tiempo < 10){
+    image(img5,width /18, height/18, tam2, tam2);}
+ 
+if (tiempo >= 8.7 && tiempo < 10) {
+ image(img6, width /30, height/3, tam2, tam2);}
+  
+if (tiempo >= 8.9 && tiempo < 10) {
+    image(img7, width /3, height/1.5, tam2, tam2);}
+  
+if (tiempo >= 9.4 && tiempo < 10) {
+    image(img8, width /1.5, height/3, tam2, tam2);}
+ 
+if (tiempo >= 9.6 && tiempo < 10) {
+    image(img9, 150, 200, tam2, tam2);}
+
+if (tiempo >= 9.8 && tiempo < 10) {
+    image(img10, 150, 6, tam2, tam2);}
+  
+if (tiempo >= 10 && tiempo < 10) {
+    image(img11, 280, 150, tam2, tam2);}
+
+  
+
+
+// time lapse 2 caras grandes
+    
+  push()
+
+imageMode(CENTER)
+  
+if (tiempo >= 5.5 && tiempo < 10) {
+  image(img1, width /2, height /2, tam2, tam2);}
+
+if (tiempo >= 6.1 && tiempo < 10) {
+  image(img2, width /4, height / 6, tam2, tam2);}
+  
+if (tiempo >= 6.5 && tiempo < 10) {
+  image(img3, width /10, height/2, tam2, tam2);}
+
+if (tiempo >= 6.9 && tiempo < 10) {
+  image(img4, 300, 10, tam2, tam2);}
+
+if (tiempo >= 7.8 && tiempo < 10) {
+  image(img5, width /18, height/18, tam2, tam2);}
+
+if (tiempo >= 8.7 && tiempo < 10) {
+  image(img6, width /30, height/3, tam2, tam2);}
+
+if (tiempo >= 8.9 && tiempo < 10) {
+  image(img7, width /3, height/1.5, tam2, tam2);}
+
+if (tiempo >= 9.4 && tiempo < 10) {
+  image(img8, width /1.5, height/3, tam2, tam2);}
+
+if (tiempo >= 9.6 && tiempo < 10) {
+  image(img9, 150, 200, tam2, tam2);}
+
+if (tiempo >= 9.8 && tiempo < 10) {
+  image(img10, 150, 6, tam2, tam2);}
+
+if (tiempo >= 10 && tiempo < 10) {
+  image(img11, 280, 150, tam2, tam2)}
+
+pop()
+  
+  
+  
+  // LETRAS //
+
+  
+  if (tiempo >= 10 && tiempo < 12){
+    fill(91, 71, 34) // VERDE OSCURO//
+  textFont('Bebas Neue')
+ textSize(150)
+  text('CUANDO', width /2, height / 3.2)}
+  
+  if (tiempo >= 10.8 && tiempo < 12){
+    fill(91, 71, 34) // VERDE OSCURO//
+  textFont('Bebas Neue')
+ textSize(150)
+  text('COINCIDO', width /2, height /1.3)}
+  
+   if (tiempo >= 10 && tiempo < 12){
+    fill(91, 71, 34) // VERDE OSCURO//
+  textFont('Bebas Neue')
+ textSize(30)
+  text('｡𖦹°‧｡𖦹°‧｡𖦹°‧｡𖦹°‧｡𖦹°‧｡𖦹°‧｡𖦹°‧｡𖦹°‧｡𖦹°‧', width /2, height /2)}
+  
+  
+  let tam3 = 400 + sin(frameCount * 0.05) * 50;
+  
+  // camara //
+  
+  push()
+  imageMode(CENTER)
+if (tiempo >= 12 && tiempo < 18) {
+  image(cam1, width /2, height /2, tam3, tam3);
+}
+pop()
+  
+
+   push()
+   imageMode(CENTER)
+if (tiempo >= 14 && tiempo < 18) {
+  image(cam2, width /2, height /2, tam3, tam3);
+}
+pop()
+  
+  
+}
+  
+    // lo mencionamos arriba pero hay que darle click a la pantalla para que inicie la musica junto con la animacion :>
+
+function mousePressed() {
+  if (empezar === false) {
+    empezar = true;
+    
+    tiempoInicial = millis()
+    
+    musica.play()
+  }
+
+}
