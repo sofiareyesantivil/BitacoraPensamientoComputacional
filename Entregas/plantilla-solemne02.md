@@ -1,18 +1,17 @@
-# Plantilla para solemne-02
 
 ## Integrantes del grupo
 
-- (Nombre apellido) [cuentaGithub](https://github.com/cuentaGithub)
-- (Nombre apellido) [cuentaGithub](https://github.com/cuentaGithub)
+- (Rafaela Carrasco) [cuentaGithub](https://github.com/cuentaGithub)
+- (Sofía Reyes) [cuentaGithub](https://github.com/sofiareyesantivil)
 
 ## Descripción del disco
 
 ![Portada de álbum xxxx yyyy](./img/cover.jpg)
 
-- (Nombre del álbum)
-- Año del álbum
-- Artista
-- Tracklist
+- ("Esquemas juveniles")
+- 2006
+- Javiera Mena
+- tr
 
 ```txt
 1. Cancion 1
