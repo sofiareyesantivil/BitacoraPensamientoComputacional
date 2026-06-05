@@ -1,6 +1,5 @@
                 //VARIABLES//
 
-
 // variables para el cambio de color del fondo
 
 let fRojo = 220; // f= fondo
