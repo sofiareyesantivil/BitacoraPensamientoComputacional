@@ -43,7 +43,7 @@ function draw() {
     cAzul = random(100, 255);
   }
 
-  // 3. Figura que controlas con el ratón (mouseX, mouseY)
+  // circulo pequeño que se controla con el mouse
   fill(cRojo, 100, cAzul);
   ellipse(mouseX, mouseY, 60, 60);
 
