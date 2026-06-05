@@ -1,7 +1,7 @@
 
 ## Integrantes del grupo
 
-- (Rafaela Carrasco) [cuentaGithub](https://github.com/cuentaGithub)
+- (Rafaela Carrasco) [cuentaGithub](https://github.com/rafaelacarrasco-pro)
 - (Sofía Reyes) [cuentaGithub](https://github.com/sofiareyesantivil)
 
 ## Descripción del disco
@@ -11,17 +11,24 @@
 - ("Esquemas juveniles")
 - 2006
 - Javiera Mena
-- tr
 
-```txt
-1. Cancion 1
-2. Cancion 2
-3. Cancion 3
+
+```track list
+1. Al siguiente nivel
+2. Esquemas juveniles
+3. Como siempre soñe
+4. Sol de invierno
+5. Camara lenta
+6. casan (no puedo bloquear lo que puedo lo que quiero dar)
+7. Cuando hablamos
+8. Esta en tus manos
+9. yo no te pido la luna
+10. Perlas
 ```
 
 - Aspecto del álbum a desarrollar (premisa)
 
-> Lorem ipsum blablabla
+> El proyecto trata de usar la cancion                                                                                                                                                                                    
 
 ## Conclusión del proceso
 
