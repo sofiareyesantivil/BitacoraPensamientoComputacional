@@ -6,7 +6,7 @@
 
 ## Descripción del disco
 
-![Portada de álbum xxxx yyyy](./img/esquemasjuveniles.jpg)
+![Portada de álbum xxxx yyyy](./img/EsquemasJuveniles.jpg)
 
 - ("Esquemas juveniles")
 - 2006
