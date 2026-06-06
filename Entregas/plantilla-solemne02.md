@@ -30,6 +30,7 @@
 
 > El proyecto trata de usar la cancion "Camara lenta", para hacer transiciones entre imagenes, siguiendo los ritmos y letras de cancion.
 
+
 ## Conclusión del proceso
 
 - Distancia entre premisa y resultado
@@ -78,6 +79,7 @@
 - Prompts utilizados
 
 > Prompt 1 : chatgpt nos separo las caras de la foto en base a este mensaje "necesito que separes todas las caras sin cambiarle la forma y consevando las facciones, y si esta sobrepuesta alguna completala", y nos dio toas las caras separadas en una misma imagem.
+> (./img/fotocreadaconchatgpt.png)
 
 > Prompt 2
 
